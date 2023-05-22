@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fiap box - Home</title>
+    <title>Epic Task - Home</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
@@ -15,7 +15,7 @@
 
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">Fiap box</a>
+            <a class="navbar-brand" href="#">Fiap Box</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -56,23 +56,21 @@
     <div class="container mt-3">
         <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
             <i class="bi bi-plus-lg"></i>
-            Faça a sua avaliação
+            Cadastrar Tarefa
         </button>
 
-        <div id="" class="row mt-3">
+        <div id="tarefas" class="row mt-3">
 
-        </div>
+        </div> <!-- row SPA -->
 
-        <div class="container">
-            <div id="tarefa"class="row">
-        </div>
+    </div> <!-- container -->
 
     <!-- Modal -->
     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="exampleModalLabel">Cadastrar Filme</h1>
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Cadastrar Tarefa</h1>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
@@ -86,12 +84,10 @@
                             <input type="range" class="form-range" min="0" max="5" id="avaliar">
                             <output id="output">3 Estrelas</output>
                         </div>
-
                         <div class="mb-3">
                             <label for="descricao" class="form-label">Descrição</label>
                             <input type="text" class="form-control" id="descricao">
                         </div>
-
                         <div class="mb-3">
                             <label for="categoria" class="form-label">Categoria</label>
                             <select class="form-select" aria-label="categoria" id="categoria">
@@ -122,7 +118,7 @@
         integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous">
     </script>
 
-    <script src="./crud2.js"></script>
+    <script src="./crud.js"></script>
 
 </body>
 
