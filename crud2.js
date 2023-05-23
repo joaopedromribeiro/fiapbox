@@ -1,5 +1,6 @@
 document.querySelector("#salvar").addEventListener("click", cadastrar)
-
+document.querySelector("#pendentes").addEventListener("click", exibir_pendente)
+document.querySelector("#avaliadas").addEventListener("click", exibir_avaliadas)
 let tarefas = []
 
 window.addEventListener("load", () => {
@@ -99,6 +100,17 @@ rangeInput.addEventListener("input", function() {
     const value = rangeInput.value;
     outputElement.textContent = `${value} Estrelas`;
 });
+
+function exibir_pendente(){
+    const pendentes = tarefas.filter((tarefa) => !tarefa.concluida);
+    filtrar(pendentes);
+}
+
+function exibir_avaliadas(){
+    const avaliadas = tarefas.filter((tarefa) => tarefa.concluida);
+    filtrar(avaliadas);
+}
+
 
 function createCard(tarefa){
     let disabled = tarefa.concluida ? "disabled" : ""
